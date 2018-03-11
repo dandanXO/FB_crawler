@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  h1= pagename
+  h1= seven
+  .container-fluid
+    .row
+        .col-sm-12
+            a.btn.btn-primary(href="/" role="button") 回首頁   
+            hr
+            if seven 
+            else
+                a.btn.btn-primary(href="../seven/"+pagename role="button") 7天內貼文查詢
+        .col-sm-12
+            hr
+            form(method="get", action="/searchDateRange" )
+                .form-group.row
+                    .col-sm-12 
+                        p="時間範圍查詢"
+                    label.col-2.col-form-label(for="example-date-input") Since
+                    .col-sm-10
+                        input(name= "pagenameSD" type="text" value= pagename style="display: none;")
+                        input#example-date-input.form-control(type="date" value="" name="Since")
+                    label.col-2.col-form-label(for="example-date-input") Until
+                    .col-sm-10
+                        input#example-date-input.form-control(type="date" value="" name="Until")
+                    .col-sm-10
+                        button.btn.btn-primary(type="submit") GO
+        .col-sm-12
+            each data in alldata
+                .card
+                    .card-body
+                        p= data.message
+                        br
+                        p=  "按讚人數: "+data.reactions.summary.total_count+"  分享人數: "+data.shares.count+"  留言數: "+data.comments.summary.total_count
+        .col-sm-12
+            form(method="get", action="../next/"+pagename )
+                .form-group
+                    input(name= "pagenameSD" type="text" value= pagename style="display: none;")
+                    if seven
+                    else
+                        input(name= "nextpage" type="text" value= res.paging.next style="display: none;")
+                if  jadge
+                    button.btn.btn-primary(type="submit") Next Page
+                else
+                    
+

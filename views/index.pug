@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  h1= title
+  
+  .container-fluid
+    .row
+      .col-sm-6
+        .card
+          h5.card-header
+            | AmazingTalker
+          .card-body
+            p.card-text AmazingTalker 的紛絲專頁貼文
+            a.btn.btn-primary(href="s/AmazingTalker") Go 
+      .col-sm-6
+        .card
+          h5.card-header
+            | goddess1688
+          .card-body
+            p.card-text goddess1688 的紛絲專頁貼文
+            a.btn.btn-primary(href="s/goddess1688") Go 
+      .col-sm-12
+        .card.text-center
+          h5.card-header
+            | 其他粉絲專業貼文
+          .card-body
+            p.card-text 下方輸入紛絲專業名稱搜尋即可
+            form(method="get", action="searchpage" )
+              .form-group
+                input.form-control(name="pageName" type="text" placeholder="Enter Page Name!")
+              button.btn.btn-primary(type="submit") 搜尋
+ 
+
+
