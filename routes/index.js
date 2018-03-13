@@ -12,8 +12,6 @@ FbApp.setAccessToken('EAABZBiQnP9kkBAP8anBo4Vb0ZA3H74vi8cgCWQU2h3kaAYvHBw1K8uPkQ
 let Since="";
 let Until="";
 router.get('/', function(req, res, next) {
-
-
   res.render('index', { title: 'FACEBOOK clwaer ' });
 });
 router.get('/next/:pagename', function(req, ress, next) {
@@ -53,6 +51,8 @@ router.get('/s/:pageName',function(req,ress,next){
   FbApp.api(pagename+'/posts',{ since: sinceTime,until:currentTime,fields: 'shares,reactions.limit(0).summary(true),likes.limit(0).summary(true),message{begin_date},comments.limit(1).summary(true)' }, function (res) {
     if(!res || res.error) {
      console.log(!res ? 'error occurred' : res.error);
+     ress.flash('info', '似乎沒有這個紛絲頁喔')
+     ress.redirect('/')
      return;
     }
    // console.log(res.data);
@@ -98,6 +98,11 @@ router.get('/seven/:pageName',function(req,ress,next){
 })
 
 router.get('/searchpage',function(req,ress,next){
+  if (req.query.pageName == ""){
+    ress.flash('info','輸入空白鍵盤會壞掉QAQ')
+    ress.redirect('/')
+    return
+  }
   var pagename = req.query.pageName;
    ress.redirect('/s/'+pagename)
 })

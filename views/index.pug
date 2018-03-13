@@ -25,6 +25,8 @@ block content
             | 其他粉絲專業貼文
           .card-body
             p.card-text 下方輸入紛絲專業名稱搜尋即可
+            if flash.info 
+              .alert.alert-danger(role="alert")= flash.info 
             form(method="get", action="searchpage" )
               .form-group
                 input.form-control(name="pageName" type="text" placeholder="Enter Page Name!")
