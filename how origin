@@ -1,0 +1,68 @@
+[33mcommit ed03de8c7698b71d244baaa74e19267a9a745297[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Dandaan <pigpig336699@gmail.com>
+Date:   Wed Mar 14 00:44:33 2018 +0800
+
+    fix search space error
+
+[33mcommit 0664dce031fc8539845153b57c97214b02105add[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Dandaan <pigpig336699@gmail.com>
+Date:   Sun Mar 11 17:50:43 2018 +0800
+
+    FB CR
+
+[33mcommit 8cdf6c99943661ea9baa65225c19d2ce57a516af[m
+Author: Dandaan <pigpig336699@gmail.com>
+Date:   Sun Mar 11 17:46:00 2018 +0800
+
+    upload
+
+[33mcommit 2fd6124ee70dc2cb70c67677a87ef6976c0b9665[m
+Merge: 00f8c12 8d9c9c3
+Author: Dandaan <pigpig336699@gmail.com>
+Date:   Sun Mar 11 15:56:32 2018 +0800
+
+    Merge branch 'master' of https://github.com/dandanXO/FB_crawler
+
+[33mcommit 00f8c127e71594b5c3cf6d8a56ad6dd663dd45ce[m
+Author: Dandaan <pigpig336699@gmail.com>
+Date:   Sun Mar 11 15:56:09 2018 +0800
+
+    'uploadall'
+
+[33mcommit 8d9c9c3218e09ca18f239a6a5a247a9e6226a819[m
+Author: dandan <pigpig850130@gmail.com>
+Date:   Sun Mar 11 15:18:44 2018 +0800
+
+    Update www
+    
+    port change to 443
+
+[33mcommit f11b4f87677fe1e0f7d1bcbb3d60ee6ca9ba4108[m
+Author: dandan <pigpig850130@gmail.com>
+Date:   Sun Mar 11 15:14:14 2018 +0800
+
+    fix port
+    
+    change port 3000  to 80
+
+[33mcommit 8d55633b2791d1a96d2a40526bbda8253ed44565[m
+Author: dandan <pigpig850130@gmail.com>
+Date:   Sun Mar 11 15:12:49 2018 +0800
+
+    fix npm start
+    
+    fix npm start
+
+[33mcommit 75bd7e382b6259352efcf622027f5cc559a58946[m
+Author: dandan <pigpig850130@gmail.com>
+Date:   Sun Mar 11 15:00:00 2018 +0800
+
+    fix
+    
+    monnode
+
+[33mcommit b7588fd779e427d2de65fbb0845343d2cf5d9e74[m
+Author: Dandaan <pigpig336699@gmail.com>
+Date:   Sun Mar 11 14:38:31 2018 +0800
+
+    fbCW first commit
